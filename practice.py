@@ -15,8 +15,8 @@ class Employee(Department):
 
 
 
-    def fullname(self):
-        return '{} {}'.format(self.first, self.last)
+    def fullname(self,Department):
+        return '{} {}{}'.format(self.first, self.last,Department)
 
 
 

@@ -1,4 +1,10 @@
-class Employee:
+from department import Department
+
+
+class Employee(Department):
+
+    def __init__(self):
+        Department.__init__(self,"IT")
 
     def __init__(self, first, last, pay, id):
         self.first = first
@@ -7,6 +13,11 @@ class Employee:
         self.pay = pay
         self.id  = id
 
+
+
     def fullname(self):
         return '{} {}'.format(self.first, self.last)
+
+
+
 
